@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    float X,P;
+    cin>>X>>P;
+    int count = 1;
+    P = P * 0.01;
+    while( X >= 1 ){
+        X = X - ( X * P );
+        count++;
+    }
+    cout<<count<<"\n";
+    return 0;
+}
